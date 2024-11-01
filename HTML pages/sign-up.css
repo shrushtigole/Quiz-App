@@ -54,7 +54,6 @@ body{
     display: flex;
     flex-direction: column;
     gap: 24px;
-    align-items: center;
 }
 
 .user-input{
@@ -70,4 +69,59 @@ body{
     border: 1px solid #8E8E93;
     width: 440px;
     height: 51px;
+}
+
+.login{
+    padding: 12px 24px;
+    text-align: center;
+    background-color: #F3BD00;
+    border-radius: 100px;
+}
+
+.login>button{
+    font-size: 16px;
+    background-color: #F3BD00;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.google{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.terms{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.terms>input{
+    font-size: 12px;
+}
+
+.terms>label>a{
+    color: #0948B4;
+    text-decoration: none;
+}
+
+.signup-option{
+    font-size: 16px;
+    text-align: center;
+}
+    
+.signup-option>p{
+    color: #8E8E93;
+}
+    
+.signup-option>p>a{
+    color: #0948B4;
+    text-decoration: none;
+    font-weight: 700;
 }
