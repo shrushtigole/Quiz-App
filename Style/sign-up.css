@@ -71,14 +71,14 @@ body{
     height: 51px;
 }
 
-.login{
+.signup-button{
     padding: 12px 24px;
     text-align: center;
     background-color: #F3BD00;
     border-radius: 100px;
 }
 
-.login>button{
+.signup-button>button{
     font-size: 16px;
     background-color: #F3BD00;
     border: none;

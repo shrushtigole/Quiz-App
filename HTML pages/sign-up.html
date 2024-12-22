@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz App</title>
-    <link rel="stylesheet" href="sign-up.css" />
+    <link rel="stylesheet" href="/Style/sign-up.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -24,7 +24,7 @@
 
                         <div class="user-input">
                             <label for="text"> Full Name <sup> <i class="fa-sharp fa-solid fa-star-of-life fa-2xs" style="color: #fb0404;"></i> </sup> </label>
-                            <input id="User-name" type="text" placeholder="Full Name" required />
+                            <input id="Username" type="text" placeholder="Full Name" required />
                         </div>
 
                         <div class="user-input">
@@ -37,8 +37,8 @@
                           <input id="Password" type="password" placeholder="Password" required />
                         </div>
 
-                        <div class="login">
-                          <button type="submit"> Login </button>
+                        <div class="signup-button">
+                          <button onclick="signup()"> Signup </button>
                         </div>
 
                         <div class="google">
@@ -62,5 +62,8 @@
             </div>
         </div>
     </section>
+
+
+    <script src="/script.js"></script>
 </body>
 </html>
