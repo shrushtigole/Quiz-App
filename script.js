@@ -1,5 +1,6 @@
 function signup() {
     console.log("funtion")
+
     var fullName = document.getElementById("Username").value ;
     var email = document.getElementById("Email").value ;
     var password = document.getElementById("Password").value ;
@@ -46,7 +47,12 @@ function signup() {
     // localStorage.setItem("userEmail",email);
     // localStorage.setItem("userPassword",password);
 
+
+    //Retrieve the existing user information from local storage
     let userInfo = JSON.parse(localStorage.getItem("userInfo")) || [];
+
+    //Check if the user already exist based on Email   
+    const userExists = userInfo.some(user => user.mail === email)
 
     var userDetail = {
         name: fullName,
@@ -57,6 +63,7 @@ function signup() {
     userInfo.push (userDetail);
 
     localStorage.setItem("userInfo",JSON.stringify(userInfo));
+    alert("Signup Successful!")
 }
 
 
