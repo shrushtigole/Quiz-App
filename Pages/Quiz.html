@@ -5,15 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/Style/quiz.css">
+    <link rel="stylesheet" href="/Style/Quiz.css">
 </head>
 <body>
-    <section id="quiz">
-        <div class="top">
-            <img src="/assets/tech_logo.jpg" alt="Techpaathshala_logo">
-            <img src="/assets/Avatar.jpg" alt="avatar">
-        </div>
-        <div class=""
+    <header>
+        <nav class="navbar">
+            <img src="/assets/tech_logo.jpg" alt="Techpaathshala logo">
+            <img src="/assets/Avatar.jpg" alt="User avatar">
+        </nav>
+    </header>
+    <section class="quiz-section">
+            <div id="quizContainer">
+
+            </div>
+            <div class="quizButtons">
+                <button id="Previous"><i class="fa-solid fa-arrow-right fa-rotate-180"></i>Previous </button>
+                <button id="Submit" onclick="submitAnswers()">Submit & Continue <i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
     </section>
+
+
+    <script src="/script.js"></script>
 </body>
 </html>

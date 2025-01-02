@@ -75,6 +75,7 @@ function signup() {
 
 
 //#########################Login page###########################//
+
 function login(){
     console.log("function")
     
@@ -99,29 +100,17 @@ function login(){
 }
 
 
+//#######################Start Quiz Page#########################//
+
+function startQuiz(){
+    alert("Do you want to start the Quiz?");
+    window.location="/Pages/Quiz.html";
+}
+
+//#####################Quiz Page###############################//
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const questions =[
+const quizContent =[
     {
         question: "Which of the following is an output device?",
         answer:[
@@ -213,6 +202,27 @@ const questions =[
         ]
     },
 ]
+
+var quizWrapper = document.getElementById("quizContainer")
+quizWrapper.innerHTML=
+`<div class="questionHeading">
+    <h1> Question 1 of 10 </h1>
+</div>
+<div id="quizWrapper">
+    <p id="questionElement"> </p>
+    <p id="answerOption"> </p>
+</div>
+`
+let question = document.getElementById("questionElement") 
+let answer = document.getElementById("answerOption")
+let submit = document.getElementById("submit")
+ 
+function submitAnswers(){
+    let randomQuiz = quizContent[Math.floor(Math.random()*quizContent.length)] 
+    
+    question.innerHTML=randomQuiz.question
+    answer.innerHTML=randomQuiz.answer
+}
 
 
 
