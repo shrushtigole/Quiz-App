@@ -212,22 +212,29 @@ quizWrapper.innerHTML=
     <p id="questionElement"> </p>
     <p id="answerOption"> </p>
 </div>
-`
-let question = document.getElementById("questionElement") 
-let answer = document.getElementById("answerOption")
-let submit = document.getElementById("submit")
+`;
+
+let question = document.getElementById("questionElement");
+let answer = document.getElementById("answerOption");
  
 function submitAnswers(){
-    let randomQuiz = quizContent[Math.floor(Math.random()*quizContent.length)] 
+    let randomQuiz = quizContent[Math.floor(Math.random()*quizContent.length)]; 
     
     question.innerHTML=randomQuiz.question
-    answer.innerHTML=randomQuiz.answer
+    answer.innerHTML='';
+
+    randomQuiz.answer.forEach((currentAnswer, currentIndex) => {
+        let radioButtonHTML= 
+        `<input type="radio" name=answer id="option${currentIndex} value="${currentAnswer.option}">
+         <label for="option${currentIndex}">  ${currentAnswer.option} </label>
+         <br>
+          `
+
+        answer.innerHTML += radioButtonHTML;
+    });
+
 }
-
-
-
-
-
+submitAnswers();
 
 
 

@@ -19,4 +19,17 @@ body{
     border-bottom: 1px solid #CBCBCB;
 }
 
+.quiz-section{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
 
+.questionHeading{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.questionHeading>h1{
+    font-size: 61px; 
+}
